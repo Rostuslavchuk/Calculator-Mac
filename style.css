@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: "San Francisco", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #565454;
+}
+.container{
+    width: 240px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 11px;
+    border: 1px solid cornsilk;
+    user-select: none;
+}
+.container .header {
+    width: 100%;
+    background-color: rgb(47, 47, 51);
+    padding: 15px 10px 5px 5px;
+    text-align: end;
+}
+#calc_line {
+    font-size: 3rem;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+.container .menu {
+    transform: translateX(1px);
+}
+
+.container .menu .row{
+    display: flex;
+    font-weight: 400;
+    width: 100%;
+}
+.container .menu .row .button{
+    width: 60px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    background-color: rgba(96, 93, 93);
+    font-size: 1.3rem;
+    border-bottom: 1px solid #111;
+    border-right: 1px solid #111;
+}
+.container .menu .row .button:active {
+    background-color: #999;
+}
+.container .menu .row .button.main:active {
+    background-color: #999;
+}
+.container .menu .row .button.action:active{
+    background-color: rgba(255, 165, 0, 0.68);
+}
+
+
+.container .menu .row .button.main{
+    background-color: rgb(74, 74, 82);
+}
+.container .menu .row .button.action{
+    background-color: rgba(255, 165, 0);
+}
+#null{
+    width: 120px;
+}
+
